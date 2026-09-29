@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int main(void){
-    int sec;
-    printf("input the second :");
-    scanf("%i", &sec);
+    int year;
+    printf("input year :");
+    scanf("%i", &year);
 
-    printf("the time is %d : %d\n", sec/60, sec%60);
+
+    printf("is the year %i the leap year? : %i", year, (year%400==0) || ((year%4==0)&&(year%100 !=0)) );
 
     return 0;
 }
